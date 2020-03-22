@@ -1,0 +1,1331 @@
+1:00:01.565,1:00:04.575
+Tego nie wiem, nie tym się tu zajmujemy 
+
+1:00:04.575,1:00:07.515
+Możemy przewidywać co ktoś
+
+1:00:07.515,1:00:10.095
+powie o produkcie po jego zobaczeniu
+
+1:00:10.095,1:00:10.595
+Ale nie generujemy akcji,
+
+1:00:10.595,1:00:12.095
+tworzymy predykcje
+
+1:00:12.095,1:00:13.115
+To bardzo ważne
+
+1:00:13.615,1:00:15.945
+ rozróżnienie
+
+1:00:17.245,1:00:20.235
+Nie wystarczy mieć tylko przykładów wejściowych 
+
+1:00:20.235,1:00:23.405
+jak zdjęcia psów i kotów
+
+1:00:23.405,1:00:25.335
+potrzebujemy też etykiet
+
+1:00:28.535,1:00:30.185
+Bardzo często kiedy ktoś mówi że nie ma wystarczającej ilości danych
+
+1:00:30.695,1:00:33.755
+tak na prawdę ma na myśli że nie ma poetykietowanych danych
+
+1:00:33.755,1:00:36.545
+Ponieważ kiedy firma próbuje 
+
+1:00:36.545,1:00:39.155
+używać Deep Learning
+
+1:00:39.155,1:00:45.065
+Często robi to by zautomatyzować lub polepszyć
+
+1:00:45.065,1:00:48.485
+coś co już robią, więc z definicji, mają już dane o tym czymś, lub sposób ich pozyskania
+
+1:00:48.675,1:00:51.455
+bo już ich używają
+
+1:00:51.455,1:00:54.325
+Ale często trudnością jest etykietowanie
+
+1:00:54.325,1:00:56.705
+Na przykład w medycynie
+
+1:00:57.275,1:01:00.175
+Jeśli chcecie stworzyć model dla prześwietleń
+
+1:01:00.425,1:01:03.335
+Na pewno da się zebrać dużo zdjęć rentgenowskich
+
+1:01:03.335,1:01:06.195
+Prawie każdego typu
+
+1:01:06.685,1:01:09.875
+Ale może być trudno przypisać im etykiety 
+
+1:01:09.875,1:01:12.955
+Opisujące złośliwość nowotworu
+
+1:01:12.955,1:01:15.775
+albo o wystąpieniu czerniaka
+
+1:01:15.815,1:01:18.565
+ponieważ tego typu etykiety nie są przechowywane
+
+1:01:18.565,1:01:21.585
+w łatwo dostępny sposób
+
+1:01:21.585,1:01:22.835
+przynajmniej nie w amerykańskiej służbie zdrowia
+
+1:01:24.275,1:01:27.215
+Więc to jest istotne rozróżnienie które wpływa
+
+1:01:27.215,1:01:28.335
+na waszą strategię
+
+1:01:31.755,1:01:34.735
+Więc model wg tego co widzieliśmy w książce PDP
+
+1:01:34.740,1:01:37.740
+Operuje wewnątrz środowiska
+
+1:01:42.120,1:01:45.440
+Implementujecie go i coś nim robicie
+
+1:01:45.900,1:01:47.880
+Ta część modelu PDP
+
+1:01:47.885,1:01:50.515
+jest bardzo ważna
+
+1:01:50.515,1:01:53.525
+Macie model który potrafi coś zrobić
+
+1:01:53.525,1:01:56.565
+Na przykład model działań policji
+
+1:01:56.565,1:01:59.235
+który przewiduje
+
+1:01:59.235,1:02:02.475
+gdzie może zostać dokonane aresztowanie
+
+1:02:02.545,1:02:05.755
+coś co jest często używane w USA
+
+1:02:06.275,1:02:09.275
+Predykcje są wykonywane na podstawie danych i etykiet
+
+1:02:09.275,1:02:12.005
+W tym przykładzie 
+
+1:02:12.005,1:02:14.485
+będzie używał danych
+
+1:02:14.485,1:02:17.505
+na przykładzie USA
+
+1:02:20.095,1:02:22.915
+W zależności czy jesteście czarno czy białoskórzy
+
+1:02:22.915,1:02:25.955
+czarnoskórzy są aresztowani około 
+
+1:02:25.955,1:02:28.955
+7 razy częściej za posiadanie marihuany
+
+1:02:28.955,1:02:32.215
+niż biali
+
+1:02:32.535,1:02:35.435
+Pomimo że skala użytkowania marihuany 
+
+1:02:35.435,1:02:38.415
+jest mniej więcej taka sama dla obu populacji
+
+1:02:38.415,1:02:41.115
+Więc jeśli opieracie się na skrzywionych danych
+
+1:02:41.115,1:02:44.345
+by zbudować model dla policji. Przewidywania modelu będą
+
+1:02:44.545,1:02:48.035
+sugerowały miejsca aresztowań w oparciu o 
+
+1:02:48.345,1:02:51.585
+te skrzywione dane. Więc więcej policjantów
+
+1:02:51.585,1:02:54.475
+Skupi swoje działania
+
+1:02:54.475,1:02:57.735
+Na obszarach wskazywanych przez predykcje
+
+1:02:58.325,1:03:01.325
+W wyniku czego znajdą tam ludzi do zaaresztowania
+
+1:03:01.565,1:03:04.945
+i wpuszczą tą informację z powrotem do modelu
+
+1:03:05.035,1:03:07.145
+który teraz będzie przewidywał
+
+1:03:07.145,1:03:10.115
+jeszcze więcej aresztów w czarnych dzielnicach
+
+1:03:10.115,1:03:13.015
+i w ten sposób się zapętlamy
+
+1:03:13.015,1:03:15.735
+To jest przykład modelu który przez interakcje ze środowiskiem
+
+1:03:15.735,1:03:18.895
+tworzy sprzężenie zwrotne
+
+1:03:19.375,1:03:22.305
+Im więcej model jest używany tym bardziej 
+
+1:03:22.305,1:03:25.595
+dane są skrzywione, co czyni model jeszcze bardziej skrzywionym itd
+
+1:03:26.175,1:03:28.725
+Więc rzeczą na którą trzeba bardzo uważać
+
+1:03:28.725,1:03:32.035
+w nauczaniu maszynowym jest zrozumienie
+
+1:03:32.035,1:03:33.005
+jak
+
+1:03:33.005,1:03:36.075
+model jest używany
+
+1:03:36.075,1:03:38.325
+i jakie mogą być tego konsekwencje
+
+1:03:41.945,1:03:44.885
+Chciałabym dodać że jest to również przykład
+
+1:03:44.885,1:03:47.455
+zamiennika, ponieważ
+
+1:03:47.455,1:03:50.525
+aresztowania są użyte jako przybliżenie dla przestępczości
+
+1:03:50.525,1:03:53.255
+Myślę że zwykle
+
+1:03:53.255,1:03:56.325
+dane które macie
+
+1:03:56.325,1:03:59.395
+są tylko przybliżeniem tego na czym tak na prawdę wam zależy
+
+1:03:59.395,1:04:02.515
+Różnica między tym przybliżeniem a prawdziwą wartością
+
+1:04:02.515,1:04:04.775
+często okazuje się istotna
+
+1:04:09.845,1:04:12.195
+Dzięki Rachel, to bardzo trafna uwaga
+
+1:04:13.735,1:04:16.555
+Dobrze więc
+
+1:04:16.555,1:04:19.715
+na koniec  zobaczmy
+
+1:04:20.415,1:04:23.255
+co się dzieje w tym kodzie
+
+1:04:23.855,1:04:25.865
+Kod który uruchamialiśmy
+
+1:04:28.475,1:04:31.585
+to w zasadzie 1, 2, 3, 4, 5, 6
+
+1:04:31.585,1:04:33.915
+Sześć linijek kodu
+
+1:04:35.845,1:04:37.305
+Pierwsza linijka
+
+1:04:38.195,1:04:40.855
+To import
+
+1:04:41.475,1:04:44.475
+w Pythonie żeby użyć zewnętrznej biblioteki
+
+1:04:44.475,1:04:46.185
+trzeba z niej zaimportować
+
+1:04:46.555,1:04:49.365
+zwykle w Pythonie programiści
+
+1:04:49.365,1:04:52.325
+importują tylko funkcje i klasy które potrzebują
+
+1:04:52.325,1:04:55.275
+z tej biblioteki
+
+1:04:55.275,1:04:58.005
+Python udostępnia też wygodny sposób
+
+1:04:58.005,1:05:01.055
+na zaimportowanie wszystkiego z modułu 
+
+1:05:01.055,1:05:03.865
+poprzez symbol *
+
+1:05:03.865,1:05:06.895
+Zwykle nie jest to dobry pomysł
+
+1:05:06.895,1:05:09.895
+ponieważ domyślnie 
+
+1:05:09.895,1:05:12.805
+kiedy importujecie * Python nie importuje tylko
+
+1:05:12.805,1:05:14.215
+tych rzeczy 
+
+1:05:14.215,1:05:17.165
+Które są istotne w bibliotece 
+
+1:05:17.165,1:05:20.185
+której chcecie użyć
+
+1:05:20.185,1:05:22.935
+ale także ze wszystkich bibliotek które ona używa itd
+
+1:05:22.935,1:05:25.775
+W rezultacie wasza przestrzeń nazw eksploduje
+
+1:05:25.775,1:05:28.765
+w okropny sposób i powoduje najróżniejsze błędy
+
+1:05:29.245,1:05:32.195
+Ponieważ fastai jest zaprojektowane do użytku
+
+1:05:32.195,1:05:34.935
+ wewnątrz środowiska REPL 
+
+1:05:34.935,1:05:37.955
+gdzie chcecie móc
+
+1:05:37.955,1:05:40.915
+szybko prototypować. Poświęciliśmy wiele czasu 
+
+1:05:40.915,1:05:43.775
+na rozwiązanie tego problemu
+
+1:05:43.775,1:05:46.635
+żeby import * było bezpieczne
+
+1:05:46.635,1:05:49.425
+Czy chcecie tego używać czy nie
+
+1:05:49.425,1:05:52.305
+zależy od was, ale wiedzcie że import * 
+
+1:05:52.305,1:05:54.895
+z biblioteki fastai
+
+1:05:54.895,1:05:57.705
+jest zaprojektowane tak że 
+
+1:05:57.705,1:06:00.885
+dostajecie tylko części których potrzebujecie
+
+1:06:01.595,1:06:04.485
+Zwróćcie uwagę że w filmie widzicie fastai2
+
+1:06:04.485,1:06:07.465
+ponieważ w czasie nagrywania
+
+1:06:07.465,1:06:10.495
+używamy wersji pre-release
+
+1:06:10.495,1:06:13.465
+Kiedy będziecie to otwierać
+
+1:06:13.465,1:06:16.475
+jako kurs online, dwójki już nie będzie
+
+1:06:18.480,1:06:20.600
+Kolejną rzeczą wartą wspomnienia jest
+
+1:06:21.020,1:06:24.165
+że są, na ten moment, cztery główne 
+
+1:06:24.165,1:06:26.545
+predefiniowane zagadnienia wewnątrz fastai
+
+1:06:26.545,1:06:28.695
+ obraz, tekst
+
+1:06:29.015,1:06:32.215
+dane tabularne i collaborative filtering
+
+1:06:32.215,1:06:35.145
+o których będziemy uczyć się później
+
+1:06:35.145,1:06:38.065
+Dla każdego z nich, na przykład vision
+
+1:06:38.065,1:06:40.905
+możecie importować z meta modułu .all 
+
+1:06:40.905,1:06:43.925
+i to zamiportuje rzeczy które
+
+1:06:43.925,1:06:46.905
+najczęściej używa się 
+
+1:06:46.905,1:06:49.905
+w przetwarzaniu obrazów
+
+1:06:49.905,1:06:53.035
+Kiedy używacie systemu REPL jak jupyter notebook
+
+1:06:53.035,1:06:56.005
+Udostępni wam to wszystko co potrzebujecie 
+
+1:06:56.005,1:06:59.295
+bez potrzeby zastanawiania się nad tym
+
+1:07:04.435,1:07:06.865
+Kłopot z takim rozwiązaniem jest że wielu użytkowników Pythona
+
+1:07:08.665,1:07:11.565
+kiedy widzi coś jak untar_data 
+
+1:07:11.565,1:07:14.545
+patrzy na importy by zrozumieć skąd się to bierze
+
+1:07:14.545,1:07:17.525
+z import * tego nie widać
+
+1:07:17.525,1:07:19.465
+Na szczęście REPL
+
+1:07:19.465,1:07:21.235
+udostępnia inne sposoby
+
+1:07:22.695,1:07:26.145
+wystarczy wpisać symbol i wcisną Shift+Enter by zobaczyć
+
+1:07:26.545,1:07:28.005
+dokładne źródło
+
+1:07:28.405,1:07:31.065
+Jak widzicie. Niesamowicie przydatne
+
+1:07:33.155,1:07:35.005
+Na przykład tutaj
+
+1:07:35.445,1:07:38.515
+przy tworzeniu zbioru danych
+
+1:07:38.515,1:07:42.015
+wywołujemy ImageDataLoaders.from_name_func
+
+1:07:42.345,1:07:45.315
+mogę w tym przypadku wywołać
+
+1:07:45.315,1:07:47.855
+specjalną funkcję doc 
+
+1:07:47.855,1:07:49.375
+by zobaczyć dokumentację 
+
+1:07:50.005,1:07:52.975
+Jak widzicie
+
+1:07:52.975,1:07:56.195
+pokazuje mi dokładne parametry z wartościami domyślnymi
+
+1:07:56.195,1:07:59.015
+a co najważniejsze
+
+1:07:59.015,1:08:02.215
+oprócz opisu co robi jest link "Show in docs"
+
+1:08:02.405,1:08:04.815
+który prowadzi do
+
+1:08:05.185,1:08:08.155
+pełnej dokumentacji
+
+1:08:08.155,1:08:09.165
+łącznie z przykładem
+
+1:08:09.975,1:08:12.645
+cała dokumentacja fastai
+
+1:08:12.645,1:08:15.745
+ma przykłady
+
+1:08:15.745,1:08:18.705
+a najfajniejsze jest to że ta dokumentacja 
+
+1:08:18.705,1:08:21.445
+jest napisane w jupyter notebook
+
+1:08:21.445,1:08:23.775
+dzięki temu możecie otworzyć notebook 
+
+1:08:23.775,1:08:26.775
+dla tego dokumentu i uruchomić linię kodu
+
+1:08:26.775,1:08:30.255
+żeby zobaczyć że działa, zobaczyć wartość wyjściową itd
+
+1:08:32.385,1:08:35.215
+W dokumentacji znajdziecie również
+
+1:08:35.215,1:08:37.525
+różne tutoriale
+
+1:08:37.525,1:08:40.480
+na przykład jeśli popatrzycie na "Vision tutorial" obejmuje on różne tematy
+
+1:08:40.480,1:08:43.560
+ jeden z nich, jest jak widzicie ,
+
+1:08:43.565,1:08:46.560
+obejmuje te same zagadnienia którymi zajmujemy się w lekcji 1
+
+1:08:46.775,1:08:49.665
+Jest mnóstwo dokumentacji w fastai
+
+1:08:49.665,1:08:52.725
+i warto z niej korzystać
+
+1:08:52.725,1:08:55.655
+W całości wspiera wyszukiwanie
+
+1:08:55.655,1:08:58.705
+i jak już wspominałem
+
+1:08:58.705,1:09:01.765
+każda z tych stron dokumentacji jest też
+
+1:09:01.765,1:09:03.285
+interaktywną stroną jupyter notebook
+
+1:09:04.895,1:09:07.825
+Patrząc na pozostały kod
+
+1:09:10.820,1:09:13.840
+ Pierwsza linijka po imporcie
+
+1:09:13.840,1:09:16.815
+wywołuje untar_data
+
+1:09:16.815,1:09:20.265
+to ściągnie zbiór danych, rozpakuje i zapisze na waszym dysku
+
+1:09:20.355,1:09:22.765
+jeśli już był ściągnięty nie będzie ściągać ponownie
+
+1:09:22.765,1:09:25.625
+jeśli jest już rozpakowany nie będzie próbować rozpakowywać
+
+1:09:25.625,1:09:28.355
+jak widzicie tutaj fastai ma 
+
+1:09:28.355,1:09:31.325
+dostęp do predefiniowanych użytecznych danych
+
+1:09:31.325,1:09:34.085
+jak ten zbiór PETS
+
+1:09:35.515,1:09:38.675
+Możecie się domyślić że zbiory danych są bardzo istotną częścią
+
+1:09:38.675,1:09:41.715
+Deep learningu będziemy używać
+
+1:09:41.715,1:09:44.735
+różnych  z nich. Które zostały stworzone przez wielu bohaterów
+
+1:09:44.755,1:09:47.815
+którzy spędzili miesiące a nawet lata
+
+1:09:47.815,1:09:51.035
+zbierając dane które możemy teraz używać w swoich modelach
+
+1:09:53.605,1:09:57.075
+Następny krok to poinstruowanie fastai
+
+1:09:57.255,1:10:00.205
+czym są te dane i spędzimy wiele czasu na 
+
+1:10:00.205,1:10:02.795
+nauce o tym. W tym przykładzie
+
+1:10:02.795,1:10:04.485
+piszemy że dane to pliki graficzne
+
+1:10:05.105,1:10:08.345
+z tej lokalizacji
+
+1:10:08.345,1:10:10.235
+untar_data zwraca ścieżkę
+
+1:10:10.805,1:10:13.595
+do katalogu gdzie pliki zostały  teraz rozpakowane
+
+1:10:13.595,1:10:16.075
+lub jeśli były wcześniej rozpakowane
+
+1:10:16.075,1:10:18.725
+zwraca tamtą ścieżkę
+
+1:10:18.725,1:10:21.475
+Musimy też podać
+
+1:10:21.475,1:10:23.035
+jakie pliki są w tej lokalizacji
+
+1:10:23.635,1:10:26.935
+Ciekawym szczegółem jest funkcja etykietująca
+
+1:10:26.935,1:10:30.135
+Jak rozpoznać dla każdego pliku
+
+1:10:30.355,1:10:32.665
+czy ma to być kot czy pies
+
+1:10:33.245,1:10:36.035
+Jeśli zerkniecie do pliku README dla tego zbioru danych
+
+1:10:36.035,1:10:38.905
+Używa trochę nietypowego sposobu
+
+1:10:38.905,1:10:41.585
+Pliki których nazwa zaczyna się od wielkiej litery
+
+1:10:41.585,1:10:44.645
+to kot
+
+1:10:44.785,1:10:47.675
+tak to zaprojektowali. Więc stworzyliśmy tu krótką funkcję
+
+1:10:47.675,1:10:50.525
+is_cat która sprawdza
+
+1:10:50.525,1:10:53.405
+czy nazwa zaczyna się w wielkiej litery i przekazujemy fastai
+
+1:10:53.405,1:10:55.745
+że w ten sposób może rozpoznać pliki z kotami
+
+1:10:58.335,1:11:01.075
+do tych dwóch wrócimy za chwilę
+
+1:11:01.075,1:11:04.025
+teraz kiedy przekazaliśmy jak wyglądają dane
+
+1:11:04.025,1:11:06.965
+musimy stworzyć coś co nazywamy learner
+
+1:11:06.965,1:11:10.015
+learner jest odpowiedzialny za naukę, trening
+
+1:11:10.015,1:11:13.005
+musicie mu przekazać jakich danych użyć
+
+1:11:13.005,1:11:15.565
+i jakiej architektury użyć
+
+1:11:17.755,1:11:20.715
+będziemy jeszcze wiele o tym mówić, ale w skrócie
+
+1:11:20.715,1:11:23.105
+istnieje dużo predefiniowanych architektur sieci neuronowych
+
+1:11:23.105,1:11:26.095
+które mają swoje wady i zalety
+
+1:11:26.095,1:11:29.085
+dla zagadnień graficznych
+
+1:11:29.085,1:11:31.880
+architektura resnet jest świetnym wyborem na początek
+
+1:11:31.880,1:11:35.080
+będziemy tu używać dosyć niewielkiej wersji tej architektury
+
+1:11:35.360,1:11:38.260
+te różne architektury są już dla was
+
+1:11:38.275,1:11:40.715
+zdefiniowane i skonfigurowane w bibliotece
+
+1:11:40.715,1:11:43.785
+Następnie musicie poinstruować fastai co powinno wypisywać w czasie nauczania
+
+1:11:43.785,1:11:46.995
+w tym przypadku: proszę wyświetlać wielkość  błędu
+
+1:11:47.295,1:11:50.295
+Później wywołujemy tą bardzo istotną metodę fine_tune
+
+1:11:50.295,1:11:53.215
+o której będziemy się uczyć w następnej lekcji
+
+1:11:53.215,1:11:54.925
+jest ona odpowiedzialna za nauczanie
+
+1:11:56.335,1:11:59.135
+valid_pct jest ważną rzeczą
+
+1:11:59.925,1:12:02.825
+wybiera ono, w tym przypadku,
+
+1:12:02.825,1:12:05.565
+20 procent danych
+
+1:12:05.995,1:12:08.985
+i nie używa ich podczas nauczania
+
+1:12:08.985,1:12:12.365
+zamiast tego używa ich do wyliczenia wartości błędu
+
+1:12:12.365,1:12:14.985
+Tak więc zawsze w fastai
+
+1:12:14.985,1:12:18.005
+ta metryka error_rate
+
+1:12:18.005,1:12:20.915
+jest wyliczona na podstawie części zbioru danych
+
+1:12:20.915,1:12:24.035
+który nie był używany do nauczania
+
+1:12:24.035,1:12:26.825
+Ta idea, o której będziemy jeszcze dyskutować w przyszłości,
+
+1:12:26.825,1:12:29.395
+polega na tym że
+
+1:12:29.395,1:12:32.675
+chcemy się upewnić że spowodujemy nadmiernego dopasowania
+
+1:12:32.745,1:12:35.735
+Nadmierne dopasowanie wygląda tak: chcecie znaleźć funkcję 
+
+1:12:35.735,1:12:38.605
+która przechodzi przez te punkty
+
+1:12:38.605,1:12:41.505
+Dobra funkcja wyglądałaby tak
+
+1:12:42.015,1:12:43.015
+racja?
+
+1:12:43.105,1:12:45.585
+Ale możecie również
+
+1:12:45.585,1:12:48.505
+dopasować funkcję o wiele dokładniej
+
+1:12:48.505,1:12:51.615
+Zobaczcie ta przechodzi bliżej punktów niż tamta
+
+1:12:51.615,1:12:54.655
+Więc wygląda to na lepszą funkcję. Tyle że
+
+1:12:54.655,1:12:57.565
+jeśli popatrzycie poza punktami
+
+1:12:57.565,1:12:58.735
+zwłaszcza na krawędziach
+
+1:12:59.255,1:13:01.925
+okazuje się że nie ma ona sensu
+
+1:13:01.925,1:13:04.715
+To właśnie nazywamy nadmiernym dopasowaniem
+
+1:13:04.865,1:13:05.865
+funkcji
+
+1:13:06.135,1:13:09.085
+Nadmierne dopasowanie ma różne przyczyny
+
+1:13:09.085,1:13:12.125
+Użycie zbyt dużego modelu, lub za mało danych
+
+1:13:12.125,1:13:15.425
+Będziemy się tym wszystkim jeszcze zajmować
+
+1:13:16.805,1:13:19.745
+Ale tak na prawdę cała sztuka w Deep Learningu
+
+1:13:19.745,1:13:22.835
+to tworzenie modelu który jest odpowiednio dopasowany
+
+1:13:22.835,1:13:25.845
+a jedyny sposób żeby wiedzieć że jest odpowiednio dopasowany
+
+1:13:25.845,1:13:28.805
+to sprawdzenie czy działa dobrze dla danych
+
+1:13:28.805,1:13:31.635
+które nie były użyte w trakcie nauki
+
+1:13:31.635,1:13:34.745
+dlatego zawsze wyłączamy część danych
+
+1:13:34.745,1:13:37.825
+by stworzyć z nich coś co nazywamy zbiorem walidacyjnym
+
+1:13:37.825,1:13:40.415
+Są to dane których 
+
+1:13:40.415,1:13:42.035
+nie tykamy w trakcie nauczania
+
+1:13:42.385,1:13:44.905
+A jedynie do sprawdzenia
+
+1:13:44.905,1:13:47.615
+czy nasz model na prawdę działa, czy nie.
+
+1:13:50.200,1:13:53.680
+Jedna z rzeczy o której Sylvain pisze w książce
+
+1:13:54.100,1:13:57.005
+to że interesującą częścią 
+
+1:13:57.005,1:14:00.020
+uczenia się z fastai jest to
+
+1:14:00.025,1:14:01.715
+że uczycie się wiele o 
+
+1:14:02.065,1:14:05.045
+samym programowaniu
+
+1:14:05.045,1:14:07.685
+ja programuję od dziecka 
+
+1:14:07.685,1:14:10.695
+więc już 40 lat
+
+1:14:10.695,1:14:14.035
+Sylvain i ja bardzo się staramy by
+
+1:14:14.035,1:14:17.095
+Używać Pythona w sposób
+
+1:14:17.095,1:14:20.095
+pasuje do naszych potrzeb
+
+1:14:20.095,1:14:23.115
+By używać praktyk które
+
+1:14:23.115,1:14:26.075
+pozwalają nam wrócić do kodu po latach i ciągle go rozumieć
+
+1:14:26.165,1:14:28.265
+Jak się przekonacie
+
+1:14:30.335,1:14:33.145
+Nasz kod piszemy w sposób 
+
+1:14:33.145,1:14:36.195
+którego mogliście wcześniej nie spotkać
+
+1:14:36.195,1:14:38.595
+wielu uczniów poprzednich kursów
+
+1:14:38.595,1:14:41.505
+powiedziało nam że nauczyli się wiele o kodowaniu, 
+
+1:14:41.505,1:14:44.475
+używaniu Pythona i inżynierii oprogramowania z tego kursu
+
+1:14:44.475,1:14:47.625
+więc jeśli zobaczycie coś nowego
+
+1:14:47.625,1:14:50.535
+przyjrzyjcie się temu i nie wahajcie spytać na forum czemu 
+
+1:14:50.535,1:14:51.565
+zostało to zrobione w dany sposób
+
+1:14:52.065,1:14:55.135
+Kolejną rzeczą
+
+1:14:55.135,1:14:57.285
+podobnie jak wspominałem o import *
+
+1:14:57.285,1:15:00.165
+którego większość programistów Pythona nie używa
+
+1:15:00.165,1:15:01.745
+bo większość bibliotek
+
+1:15:02.355,1:15:05.635
+nie wspiera robienia tego bezpiecznie
+
+1:15:05.685,1:15:08.155
+Również w wielu innych miejscach 
+
+1:15:08.155,1:15:11.165
+nie trzymamy się tradycyjnego podejścia do programowania w Pythonie
+
+1:15:12.935,1:15:15.925
+Używałem tylu różnych języków programowania przez lata
+
+1:15:16.255,1:15:18.975
+że programuję w sposób
+
+1:15:18.975,1:15:21.635
+który jest Pythoniczny
+
+1:15:21.635,1:15:25.095
+Inkorporuję idee z innych języków i notacji
+
+1:15:26.725,1:15:29.685
+i mocno spersonalizowałem nasze podejście
+
+1:15:29.685,1:15:32.655
+do Pythona żeby pasowało dobrze dla Data Science
+
+1:15:33.655,1:15:36.485
+to znaczy że kod który zobaczycie w fastai
+
+1:15:36.485,1:15:39.505
+najprawdopodobniej nie będzie pasował do
+
+1:15:39.505,1:15:42.505
+rekomendowanego stylu
+
+1:15:42.505,1:15:45.275
+w waszej pracy, jeśli używacie Pythona
+
+1:15:45.455,1:15:47.535
+Więc oczywiście musicie
+
+1:15:47.535,1:15:50.505
+dopasować się do rekomendacji 
+
+1:15:50.505,1:15:53.845
+waszych organizacji 
+
+1:15:54.395,1:15:57.435
+zamiast naszych
+
+1:15:57.435,1:16:00.075
+Ale może w swoich prywatnych projektach możecie 
+
+1:16:00.285,1:16:03.075
+wypróbować nasz sposób i sprawdzić czy jest przydatny
+
+1:16:03.345,1:16:06.475
+Albo poeksperymentować w swojej firmie jeśli jesteście managerami i chcecie tego spróbować
+
+1:16:10.915,1:16:14.385
+Okay, na koniec pokażę wam coś ciekawego
+
+1:16:15.755,1:16:18.025
+spójrzcie na
+
+1:16:19.085,1:16:20.085
+ten kod
+
+1:16:20.235,1:16:21.745
+untar_data
+
+1:16:22.335,1:16:25.015
+ImageDataLoaders.from_name_func
+
+1:16:25.015,1:16:26.085
+learner, fine_tune
+
+1:16:27.025,1:16:29.635
+untar_data, SegmentationDataLoaders.from_label_func
+
+1:16:29.635,1:16:32.865
+learner, fine_tune
+
+1:16:33.115,1:16:34.675
+prawie identyczny kod
+
+1:16:35.275,1:16:38.525
+i to stworzyło model który robi... wow! Coś całkiem innego
+
+1:16:38.525,1:16:41.585
+Coś co przyjmuje obrazy
+
+1:16:41.585,1:16:44.575
+Po lewej są
+
+1:16:44.575,1:16:47.695
+Poetykietowane dane, obrazki gdzie kolory odpowiadają obiektom
+
+1:16:47.695,1:16:50.525
+czy jest to samochód, czy drzewo
+
+1:16:50.525,1:16:53.305
+czy budynek, niebo, pasy, droga
+
+1:16:53.765,1:16:56.695
+a po prawej wynik działania naszego modelu
+
+1:16:56.695,1:16:59.575
+Model poradził sobie z przypisaniem każdemu pikselowi
+
+1:16:59.685,1:17:02.645
+czy należy do samochodu, pasowi, drodze
+
+1:17:02.645,1:17:04.415
+zajęło to tylko
+
+1:17:05.245,1:17:08.165
+poniżej 30 sekund, jest to mały szybki model
+
+1:17:08.165,1:17:11.665
+popełnił trochę błędów jak część tego pasa na drodze 
+
+1:17:11.745,1:17:14.555
+czy niektórych samochodów czy domów
+
+1:17:14.555,1:17:17.675
+ale jak widzicie jeśli 
+
+1:17:17.675,1:17:20.695
+pouczylibyście go przez kilka minut będzie działał prawie idealnie
+
+1:17:22.395,1:17:24.825
+Podstawowa idea to że 
+
+1:17:24.825,1:17:27.945
+możemy bardzo szybko, używając prawie tego samego kodu
+
+1:17:27.945,1:17:31.095
+zrobić coś co nie odróżnia kotów od psów
+
+1:17:31.095,1:17:34.135
+a robi coś co nazywamy segmentacją. Rozumie czym jest każdy piksel w obrazie
+
+1:17:35.475,1:17:38.445
+Zobaczcie, znów to samo.
+from ... import *
+
+1:17:38.445,1:17:40.445
+TextDataLoaders.from_folder
+learner
+
+1:17:40.445,1:17:41.415
+learn.fine_tune
+
+1:17:41.415,1:17:43.545
+ta sama struktura kodu
+
+1:17:44.575,1:17:47.705
+To nam dało coś co w oparciu o zdanie
+
+1:17:47.715,1:17:50.775
+potrafi określi czy opisuje ono pozytywną 
+
+1:17:50.775,1:17:53.275
+czy negatywną opinię
+
+1:17:53.275,1:17:55.985
+Robi to z dokładnością 93%
+
+1:17:57.255,1:17:59.605
+po 15 minutach nauczania
+
+1:18:00.335,1:18:03.445
+na zbiorze danych IMDB
+
+1:18:03.445,1:18:06.365
+który zawiera tysiące pełnych recenzji filmów 
+
+1:18:06.365,1:18:09.695
+zawierających 1000 do 3000 słów
+
+1:18:09.785,1:18:12.595
+Wynik który tu osiągnęliśmy , tymi samymi trzema linijkami kodu
+
+1:18:12.595,1:18:14.285
+byłby najlepszy na świecie
+
+1:18:14.795,1:18:17.775
+dla tego problemu na tym bardzo popularnym zbiorze danych
+
+1:18:17.775,1:18:18.775
+w roku 2015
+
+1:18:18.845,1:18:22.275
+Więc tworzymy modele światowej klasy
+
+1:18:22.515,1:18:25.725
+w naszej przeglądarce
+
+1:18:25.725,1:18:28.145
+używając tego samego podstawowego kodu
+
+1:18:31.655,1:18:34.615
+Tutaj znowu te same kroki
+
+1:18:34.615,1:18:37.735
+from ... import *
+untar_data
+TabularDataLoaders.from_csv
+
+1:18:37.735,1:18:39.465
+learner
+fit
+
+1:18:39.815,1:18:42.705
+Tym razem zbudowaliśmy model
+
+1:18:42.705,1:18:46.055
+który przewiduje... popatrzmy
+
+1:18:46.055,1:18:47.055
+pensje
+
+1:18:47.495,1:18:50.485
+na podstawie arkusza CSV zawierającego
+
+1:18:51.375,1:18:54.035
+te kolumny. Dane tabelaryczne
+
+1:18:56.025,1:18:58.025
+Znów te same podstawowe kroki
+from ... import * 
+
+1:18:58.025,1:18:59.065
+untar_data
+
+1:18:59.065,1:19:01.705
+CollabDataLoaders.from_csv
+learner
+
+1:19:01.705,1:19:03.075
+learn.fine_tune
+
+1:19:03.755,1:19:05.815
+To buduje model
+
+1:19:06.235,1:19:09.125
+który przewiduje dla filmu
+
+1:19:09.125,1:19:11.525
+i widza
+
+1:19:11.995,1:19:15.105
+ jak on go oceni na podstawie
+
+1:19:15.105,1:19:18.255
+innych filmów które oglądał i oceniał w przeszłości
+
+1:19:18.255,1:19:21.155
+nazywamy to Collaborative filtering
+
+1:19:21.155,1:19:22.425
+używane w systemach rekomendacji
+
+1:19:22.885,1:19:25.925
+Więc zobaczyliście przykłady każdego z czterech
+
+1:19:25.925,1:19:28.495
+zastosowań w fastai
+
+1:19:29.045,1:19:31.965
+i jak zobaczycie studiując ten kurs
+
+1:19:31.965,1:19:34.705
+ten sam podstawowy kod
+
+1:19:34.705,1:19:37.435
+i te same zasady matematyczne i architektoniczne
+
+1:19:37.435,1:19:40.505
+pozwalają nam robić
+
+1:19:40.505,1:19:43.635
+kompletnie różne rzeczy używając tego samego zasadniczego podejścia
+
+1:19:43.635,1:19:46.855
+Jest to możliwe dzięki Arthurowi Samuelowi  
+
+1:19:46.965,1:19:50.385
+Jego ogólnym opisie
+
+1:19:50.745,1:19:53.685
+co da się osiągnąć
+
+1:19:53.685,1:19:56.785
+jeśli jesteś w stanie sparametryzować model
+
+1:19:56.785,1:19:59.805
+i stworzyć procedurę update która
+
+1:19:59.805,1:20:03.095
+zmienia wagi w sposób który poprawia
+
+1:20:03.485,1:20:06.435
+wartość funkcji loss
+
+1:20:06.435,1:20:09.365
+w tym przypadku możemy użyć sieci neuronowych
+
+1:20:09.365,1:20:12.645
+które spełniają rolę elastycznych funkcji
+
+1:20:14.365,1:20:15.865
+tak więc
+
+1:20:16.905,1:20:19.835
+To na tyle w pierwszej lekcji
+była trochę krótsza
+
+1:20:19.905,1:20:23.235
+niż przyszłe lekcje. Spowodowane
+
+1:20:23.235,1:20:26.305
+jesteśmy teraz, jak wspominałem
+
+1:20:26.305,1:20:29.135
+na początku globalnej pandemii, przynajmniej tu na zachodzie
+
+1:20:29.135,1:20:32.105
+inne kraje są już w dalszej fazie
+
+1:20:32.345,1:20:35.425
+Poświęciliśmy trochę czasu na rozmowę o tym na początku
+
+1:20:35.425,1:20:37.675
+możecie to znaleźć w innym filmie
+
+1:20:38.285,1:20:41.065
+w kolejnych lekcjach
+
+1:20:41.065,1:20:43.925
+będzie więcej czasu na Deep Learning
+
+1:20:45.475,1:20:47.985
+teraz proponowałbym wam
+
+1:20:47.985,1:20:51.215
+przez następny tydzień
+
+1:20:51.215,1:20:54.145
+zanim przejdziecie do następnej lekcji
+
+1:20:54.145,1:20:56.525
+upewnijcie się że macie działający serwer z GPU
+
+1:20:56.525,1:20:59.615
+potraficie go wyłączyć kiedy skończycie
+
+1:20:59.615,1:21:02.395
+możecie uruchomić cały kod 
+
+1:21:02.395,1:21:04.805
+i czytając go 
+
+1:21:04.805,1:21:07.555
+zastanówcie się czy używa on Pythona w sposób który rozumiecie
+
+1:21:07.975,1:21:11.355
+Używajcie dokumentacji, funkcji doc()
+
+1:21:13.195,1:21:16.145
+Przeszukujcie dokumentacje zobaczcie jak działa
+
+1:21:16.145,1:21:19.005
+sprawdźcie czy możecie 
+
+1:21:19.005,1:21:21.855
+otworzyć notebooki z dokumentacją i je uruchomić
+
+1:21:21.855,1:21:24.805
+Spróbujcie zaznajomić się
+
+1:21:24.805,1:21:27.705
+z użytkowaniem tego wszystkiego, 
+najważniejsze w tym
+
+1:21:27.705,1:21:30.395
+stylu nauki (z góry na dół)
+
+1:21:30.395,1:21:33.575
+to być w stanie przeprowadzać eksperymenty
+
+1:21:33.575,1:21:36.155
+a to znaczy uruchamiać kod
+
+1:21:36.155,1:21:38.845
+Więc sugeruję żebyście nie szli dalej zanim nie będziecie w stanie uruchamiać kodu
+
+1:21:39.785,1:21:42.015
+Przeczytajcie rozdział z książki
+
+1:21:43.015,1:21:44.025
+a następnie
+
+1:21:44.535,1:21:47.345
+Zróbcie ankietę
+
+1:21:47.345,1:21:49.085
+Część zagadnień mamy ciągle przed sobą
+
+1:21:49.085,1:21:51.835
+Więcej nauki o zbiorach walidacyjnych i testowych
+
+1:21:51.835,1:21:54.725
+o Transfer Learning, więc nie będziecie jeszcze w stanie odpowiedzieć na wszystkie pytania
+
+1:21:54.975,1:21:58.015
+ale postarajcie się odpowiedzieć na te na które możecie
+
+1:21:58.015,1:22:00.835
+na podstawie tego czego nauczyliście się dotychczas
+
+1:22:01.965,1:22:04.965
+Rachel czy masz coś do dodania?
+
+1:22:04.965,1:22:07.505
+W takim razie dziękuję wam bardzo za uwagę. Lekcja pierwsza zakończona
+
+1:22:07.505,1:22:10.305
+Do zobaczenia następnym razem
+
+1:22:10.665,1:22:13.545
+kiedy będziemy się uczyć o Transfer Learning
+
+1:22:13.735,1:22:16.795
+a następnie przejdziemy do stworzenia
+
+1:22:16.795,1:22:19.815
+działającej aplikacji
+
+1:22:19.815,1:22:22.175
+którą będziemy mogli
+
+1:22:22.175,1:22:24.945
+umieścić w internecie
+
+1:22:24.945,1:22:28.445
+i będziecie mogli zacząć tworzyć własne aplikacje i pokazywać swoim znajomym
+
+1:22:29.005,1:22:30.785
+Do zobaczenia!
