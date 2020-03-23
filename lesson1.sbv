@@ -1182,7 +1182,7 @@ i stworzyć procedurę update która
 zmienia wagi w sposób który poprawia
 
 1:20:03.485,1:20:06.435
-wartość funkcji loss
+wartość funkcji kosztu 
 
 1:20:06.435,1:20:09.365
 w tym przypadku możemy użyć sieci neuronowych
